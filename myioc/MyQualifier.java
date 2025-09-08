@@ -1,8 +1,9 @@
 package myioc;
+
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface MyComponent {
+@Target(ElementType.FIELD)
+public @interface MyQualifier {
     String value() default "";
 }
